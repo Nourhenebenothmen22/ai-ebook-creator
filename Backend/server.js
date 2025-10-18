@@ -13,8 +13,8 @@ const rateLimit = require("express-rate-limit");
 const xss = require("xss-clean");
 const hpp = require("hpp");
 const path = require("path");
-
-
+const connectDB=require('./config/db')
+connectDB()
 
 // Initialisation
 const app = express();
