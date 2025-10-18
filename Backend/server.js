@@ -62,6 +62,8 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 
 // ========================
 // 4. Routes de base
